@@ -25,7 +25,7 @@ const { reset } = useInfiniteScroll(
   {
     distance: 10,
     canLoadMore: () => {
-      // inidicate when there is no more content to load so onLoadMore stops triggering
+      // indicate when there is no more content to load so onLoadMore stops triggering
       // if (noMoreContent) return false
       return true // for demo purposes
     },
@@ -79,7 +79,7 @@ function onLoadMore() {
   data.value.push(...Array.from({ length: 5 }, (_, i) => length + i))
 }
 function canLoadMore() {
-  // inidicate when there is no more content to load so onLoadMore stops triggering
+  // indicate when there is no more content to load so onLoadMore stops triggering
   // if (noMoreContent) return false
   return true // for demo purposes
 }
